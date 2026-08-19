@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Gift for Poojitha from Jaswanth 🎁✨ | Happy Birthday!</title>
+  <meta name="description"
+    content="A special birthday gift crafted with all the love for my dear sister Poojitha from Jaswanth!">
+
+  <!-- Google Fonts: Warm, Joyful, Handwritten & Elegant -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Comfortaa:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Cute Music Note Charm -->
+  <div class="music-charm" id="musicCharm" title="Play / Pause Birthday Music 🎵">
+    <div class="music-icon-wrap">
+      <span class="music-note-symbol">🎵</span>
+      <div class="sound-ripples" id="soundRipples">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <span class="music-charm-label" id="musicLabel">Music</span>
+  </div>
+
+  <!-- STAGE 1: THE WRAPPED PRESENT BOX (HERO COVER) -->
+  <section class="gift-cover-screen" id="giftCover">
+    <div class="gift-scene-container">
+
+      <!-- Floating Cute Doodles & Sparkles -->
+      <div class="floating-doodles">
+        <span class="doodle d-1">✨</span>
+        <span class="doodle d-2">🌸</span>
+        <span class="doodle d-3">💖</span>
+        <span class="doodle d-4">🧁</span>
+        <span class="doodle d-5">🎀</span>
+        <span class="doodle d-6">⭐</span>
+        <span class="doodle d-7">🎉</span>
+      </div>
+
+      <div class="gift-tag-top">
+        <span class="tag-pin">📌</span>
+        <div class="tag-content">
+          <span class="tag-to">FOR: <strong>POOJITHA</strong> 👑</span>
+          <span class="tag-from">FROM: <strong>JASWANTH</strong> ❤️</span>
+          <span class="tag-sub">A special surprise delivered with all my love!</span>
+        </div>
+      </div>
+
+      <!-- 3D Interactive Present Box -->
+      <div class="gift-box-3d" id="giftBox">
+        <div class="gift-lid" id="giftLid">
+          <div class="gift-bow">
+            <div class="bow-loop bow-loop-left"></div>
+            <div class="bow-loop bow-loop-right"></div>
+            <div class="bow-center"></div>
+            <div class="bow-ribbon-left"></div>
+            <div class="bow-ribbon-right"></div>
+          </div>
+          <div class="ribbon-vertical-lid"></div>
+          <div class="ribbon-horizontal-lid"></div>
+        </div>
+
+        <div class="gift-body">
+          <div class="ribbon-vertical-body"></div>
+          <div class="ribbon-horizontal-body"></div>
+          <div class="gift-heart-badge">💖</div>
+        </div>
+      </div>
+
+      <div class="open-instruction">
+        <button class="open-gift-btn" id="openGiftBtn">
+          <span>✨ Untie the Ribbon & Open Present ✨</span>
+        </button>
+        <p class="tap-hint">Tap the gift box or button above to unwrap your birthday surprise!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STAGE 2: THE UNWRAPPED JOYFUL CELEBRATION (REVEALED CONTENT) -->
+  <main class="gift-celebration-main" id="celebrationMain">
+
+    <!-- Celebration Banner & Greeting -->
+    <header class="celebration-hero">
+      <div class="bunting-flags">
+        <span>🎉</span><span>🌸</span><span>✨</span><span>🎂</span><span>💖</span><span>🎈</span><span>🌟</span>
+      </div>
+
+      <div class="hero-badge">Special Birthday Present from Jaswanth 💖</div>
+      <h1 class="main-title">Happy Birthday, <br><span class="name-highlight">Poojitha!</span></h1>
+      <p class="heartfelt-intro">
+        To the sweetest, coolest, and most amazing sister in the universe!
+        Here is your personalized birthday gift scrapbook filled with love, memories, and special surprises! 🎁✨
+      </p>
+
+      <div class="quick-gift-pills">
+        <a href="#cakeSection" class="pill-btn">🎂 Blow Cake Candle</a>
+        <a href="#couponsSection" class="pill-btn">🎟️ Pick 1 VIP Coupon</a>
+        <a href="#photoSliderSection" class="pill-btn">📸 Memory Photo Slide</a>
+        <a href="#timelineSection" class="pill-btn">📖 Sibling Storybook</a>
+        <a href="#letterSection" class="pill-btn">💌 Jaswanth’s Letter</a>
+      </div>
+    </header>
+
+    <!-- 1. The Cute Birthday Cake Ceremony -->
+    <section class="scrapbook-section" id="cakeSection">
+      <div class="section-card cake-card">
+        <div class="tape-corner tape-top-left"></div>
+        <div class="tape-corner tape-top-right"></div>
+
+        <div class="section-badge-handwritten">Make a Wish ✨</div>
+        <h2 class="handwritten-title">Blow Your Birthday Candle! 🎂</h2>
+        <p class="section-subtext">
+          Close your eyes, make the biggest wish in your heart, and tap the candle flame!
+        </p>
+
+        <div class="cute-cake-stage">
+          <div class="cake-display" id="birthdayCake" title="Tap candle to blow!">
+            <div class="cake-candle" id="cakeCandle">
+              <div class="candle-flame" id="candleFlame"></div>
+              <div class="candle-smoke" id="candleSmoke"></div>
+              <div class="candle-stick"></div>
+            </div>
+
+            <!-- Hand-drawn layered cake -->
+            <div class="cake-layer cake-layer-1">
+              <div class="strawberry-toppers">
+                <span>🍓</span><span>🍓</span><span>🍓</span><span>🍓</span>
+              </div>
+              <div class="cream-drips">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="cake-layer cake-layer-2">
+              <span class="cake-text-icing">HAPPY BIRTHDAY POOJITHA</span>
+            </div>
+            <div class="cake-layer cake-layer-3">
+              <div class="sprinkles">
+                <b></b><b></b><b></b><b></b><b></b><b></b>
+              </div>
+            </div>
+            <div class="cake-platter"></div>
+          </div>
+
+          <div class="cake-action-wrap">
+            <button class="action-btn-bubble" id="blowCandleActionBtn">
+              🕯️ Tap to Blow Candle & Make a Wish
+            </button>
+            <button class="action-btn-subtle" id="relightCandleActionBtn" style="display: none;">
+              ✨ Light Candle Again
+            </button>
+          </div>
+
+          <!-- Wish Card Reveal -->
+          <div class="wish-reveal-box" id="wishRevealBox">
+            <div class="wish-stamp">WISH GRANTED! ✨</div>
+            <h3>May Every Dream of Yours Come True, Poojitha! 🌈</h3>
+            <p>
+              "May this new year bring you boundless happiness, peace, endless laughter, great triumphs, and countless
+              cute adventures. Jaswanth is always cheering for your brightest future!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SISTERHOOD VIP BIRTHDAY COUPONS (ONLY 1 CAN BE REDEEMED!) -->
+    <section class="scrapbook-section" id="couponsSection">
+      <div class="section-card coupons-card">
+        <div class="section-badge-handwritten">Exclusive Brother-Sister Perk 🎟️</div>
+        <h2 class="handwritten-title">Choose Your 1 Birthday VIP Coupon</h2>
+        <p class="section-subtext">
+          Issued by Jaswanth! Choose wisely — you can only redeem <strong>1 coupon out of 4</strong>!
+        </p>
+
+        <div class="coupons-grid" id="couponsGrid">
+          <!-- Populated by JavaScript with 1-pick exclusive mechanic -->
+        </div>
+
+        <div class="coupon-reset-wrap" id="couponResetWrap" style="display: none;">
+          <button class="coupon-change-btn" id="changeCouponBtn">
+            🔄 Want to change your coupon choice? Tap here
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MEMORY PHOTO SLIDER / CAROUSEL -->
+    <section class="scrapbook-section" id="photoSliderSection">
+      <div class="section-card slider-card">
+        <div class="tape-corner tape-top-left"></div>
+        <div class="tape-corner tape-top-right"></div>
+
+        <div class="section-badge-handwritten">Cherished Memories 📸✨</div>
+        <h2 class="handwritten-title">Poojitha’s Photo Gallery</h2>
+        <p class="section-subtext">
+          A sweet slide of our favorite moments and radiant smiles!
+        </p>
+
+        <div class="photo-slider-wrapper">
+          <!-- Slide Navigation Arrows -->
+          <button class="slider-arrow-btn arrow-prev" id="prevSlideBtn" title="Previous Photo">❮</button>
+          <button class="slider-arrow-btn arrow-next" id="nextSlideBtn" title="Next Photo">❯</button>
+
+          <!-- Slider Viewport -->
+          <div class="slider-track" id="sliderTrack">
+            <!-- Rendered by JavaScript (loads from assets/ or aesthetic presets) -->
+          </div>
+
+          <!-- Slider Pagination Dots -->
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SIBLING STORYBOOK & MEMORY TIMELINE -->
+    <section class="scrapbook-section" id="timelineSection">
+      <div class="section-card timeline-card">
+        <div class="tape-corner tape-top-left"></div>
+        <div class="tape-corner tape-top-right"></div>
+
+        <div class="section-badge-handwritten">Our Sibling Story 📖✨</div>
+        <h2 class="handwritten-title">Chapters of Growing Up Together</h2>
+        <p class="section-subtext">
+          From little kids fighting over the remote to lifelong best friends!
+        </p>
+
+        <div class="sibling-timeline">
+          <div class="timeline-step">
+            <div class="timeline-icon-bubble">📺</div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Chapter 1</span>
+              <h3>The Childhood Days & Remote Fights</h3>
+              <p>Fighting over cartoons, hiding each other's favorite snacks, and blaming each other for everything!</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-icon-bubble">🕵️‍♀️</div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Chapter 2</span>
+              <h3>Partners in Crime</h3>
+              <p>Covering for each other, keeping each other’s secrets, and having inside jokes that no one else in the
+                world gets.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-icon-bubble">💬</div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Chapter 3</span>
+              <h3>Late-Night Talks & Lifelong Support</h3>
+              <p>Through every milestone, dream, and silly problem, knowing that we always have each other’s backs no
+                matter what.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-icon-bubble">👑</div>
+            <div class="timeline-content">
+              <span class="timeline-badge">Chapter 4 • Today</span>
+              <h3>Celebrating You, Poojitha!</h3>
+              <p>Proud of the smart, kind, and radiant person you are. Here’s to a future filled with happiness and big
+                achievements!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. The Heartfelt Sister Letter from Jaswanth -->
+    <section class="scrapbook-section" id="letterSection">
+      <div class="section-card letter-card">
+        <div class="washi-tape-top"></div>
+        <div class="cute-paperclip">📎</div>
+
+        <div class="letter-inner-paper">
+          <div class="letter-head-row">
+            <span class="letter-tagline">A letter from the heart 💌</span>
+            <span class="letter-stamp-cute">FOR POOJITHA FROM JASWANTH</span>
+          </div>
+
+          <h2 class="letter-salutation">Dearest Poojitha,</h2>
+
+          <div class="letter-paragraphs">
+            <p>
+              Happy, happy birthday to the most wonderful sister in the world! 💖
+            </p>
+            <p>
+              Growing up with you and having you as my sister is truly one of the biggest blessings of my life. From all
+              our silly fights and late-night talks to sharing inside jokes that only the two of us understand, you make
+              life so much brighter, happier, and full of fun.
+            </p>
+            <p>
+              You have such a pure, kind heart and a beautiful energy that lifts up everyone around you. No matter what
+              comes your way, always remember how capable, brilliant, and special you are.
+            </p>
+            <p>
+              Whatever dreams or goals you set your eyes on this year, I promise I will always stand by you, support
+              you, and be your forever partner-in-crime! Enjoy every single second of your day! 🌟🎂
+            </p>
+          </div>
+
+          <div class="letter-closing">
+            <p>With endless love, hugs & blessings,</p>
+            <span class="letter-signature-cursive">Your Brother, Jaswanth ❤️</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SISTER LOVE METER & TAP COUNTER -->
+    <section class="scrapbook-section" id="loveMeterSection">
+      <div class="section-card love-meter-card">
+        <div class="section-badge-handwritten">Sister Love Meter 💖</div>
+        <h2 class="handwritten-title">How Much Love for Poojitha Today?</h2>
+        <p class="section-subtext">Tap the giant heart below to shower love and fill up the celebration counter!</p>
+
+        <div class="love-meter-stage">
+          <button class="love-heart-btn" id="loveHeartBtn" title="Click to send love!">
+            <span class="heart-icon">💖</span>
+            <span class="heart-pulse-ring"></span>
+          </button>
+          <div class="love-counter-display">
+            <span class="counter-number" id="loveCounterVal">1,000</span>
+            <span class="counter-label">Hearts & Smiles Given! ✨</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Big Sister Hug & Celebration Cannon -->
+    <section class="scrapbook-section hug-section">
+      <div class="section-card hug-card">
+        <div class="hug-emoji">🤗💖</div>
+        <h2 class="handwritten-title">Sending You The Biggest Birthday Hug!</h2>
+        <p class="section-subtext">
+          Click the button below to trigger a massive confetti & hearts celebration across the screen!
+        </p>
+
+        <button class="huge-hug-btn" id="sendHugBtn">
+          <span>💖 Send Massive Sister Hug! (From Jaswanth) 🎉</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Warm Footer -->
+    <footer class="gift-footer">
+      <div class="footer-decorations">🌸 💖 🎂 🌸</div>
+      <p class="footer-main">Happy Birthday Poojitha! Made with love by Jaswanth ✨</p>
+      <button class="back-top-gift-btn" id="giftBackToTop">↑ Back to Top of Present</button>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
